@@ -18,14 +18,12 @@ const Hero = () => {
           Explore amazing movies and shows, discover new stories,
           and find something exciting to watch.
         </p>
-
-        <Link
-              to="/movies"
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg bg-yellow-500 px-4 py-2 text-center font-semibold text-black"
-            >
-              Explorer Movies
-            </Link>
+<Link
+  to="/movies"
+  className="inline-block rounded-lg bg-yellow-500 px-7 py-3 font-bold text-black transition hover:bg-yellow-400"
+>
+  Explore Movies
+</Link>
       </div>
     </section>
   );
