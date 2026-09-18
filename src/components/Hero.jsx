@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section className="relative flex min-h-[600px] items-center justify-center bg-gray-900 px-6 text-center text-white">
@@ -17,12 +19,13 @@ const Hero = () => {
           and find something exciting to watch.
         </p>
 
-        <a
-          href="/movies"
-          className="inline-block rounded-lg bg-yellow-500 px-7 py-3 font-bold text-black transition hover:bg-yellow-400"
-        >
-          Explore Movies
-        </a>
+        <Link
+              to="/movies"
+              onClick={() => setMenuOpen(false)}
+              className="rounded-lg bg-yellow-500 px-4 py-2 text-center font-semibold text-black"
+            >
+              Explorer Movies
+            </Link>
       </div>
     </section>
   );
